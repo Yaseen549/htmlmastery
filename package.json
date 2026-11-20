@@ -1,7 +1,7 @@
 {
   "name": "html5-complete-reference-platform",
   "version": "1.0.0",
-  "description": "HTML5 Complete Reference & Educational Platform — Every HTML Element, Attribute, and Right-Side Live Interactive Demo",
+  "description": "A simple, clean reference covering every HTML tag, its attributes, accessibility rules, and real browser output.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",

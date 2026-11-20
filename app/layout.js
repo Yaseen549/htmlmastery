@@ -7,7 +7,7 @@ export const metadata = {
     template: '%s | HTML5 Reference',
   },
   description:
-    'Complete reference and learning platform covering every HTML5 element, standard attributes, accessibility ARIA mappings, and authentic native browser demonstrations.',
+    'A simple, clean reference covering every HTML tag, its attributes, accessibility rules, and real browser output.',
   applicationName: 'HTML5 Reference Platform',
   authors: [{ name: 'Yaseen', url: 'https://iamyaseen.vercel.app' }],
   creator: 'Yaseen',
@@ -34,7 +34,7 @@ export const metadata = {
   openGraph: {
     title: 'HTML5 Reference — Complete Educational Guide & Native Browser Preview',
     description:
-      'Complete reference and learning platform covering every HTML5 element, standard attributes, accessibility ARIA mappings, and authentic native browser demonstrations.',
+      'A simple, clean reference covering every HTML tag, its attributes, accessibility rules, and real browser output.',
     url: 'https://html5reference.dev',
     siteName: 'HTML5 Reference',
     locale: 'en_US',
@@ -44,7 +44,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'HTML5 Reference — Complete Educational Guide & Native Browser Preview',
     description:
-      'Complete reference and learning platform covering every HTML5 element, standard attributes, accessibility ARIA mappings, and authentic native browser demonstrations.',
+      'A simple, clean reference covering every HTML tag, its attributes, accessibility rules, and real browser output.',
     creator: '@iamyaseen',
   },
 };
