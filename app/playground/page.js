@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 import DocShell from '../../components/layout/DocShell';
 import Footer from '../../components/layout/Footer';
+import CodeEditor from '../../components/learning/CodeEditor';
 
 const PLAYGROUND_TEMPLATES = [
   {
@@ -227,7 +228,6 @@ export default function PlaygroundPage() {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [reloadKey, setReloadKey] = useState(0);
-  const textareaRef = useRef(null);
 
   const handleTemplateChange = (e) => {
     const idx = parseInt(e.target.value, 10);
@@ -260,23 +260,6 @@ export default function PlaygroundPage() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-  };
-
-  // Support Tab key indentation inside textarea
-  const handleKeyDown = (e) => {
-    if (e.key === 'Tab') {
-      e.preventDefault();
-      const { selectionStart, selectionEnd, value } = textareaRef.current;
-      const newValue =
-        value.substring(0, selectionStart) + '  ' + value.substring(selectionEnd);
-      setCode(newValue);
-      setTimeout(() => {
-        if (textareaRef.current) {
-          textareaRef.current.selectionStart = selectionStart + 2;
-          textareaRef.current.selectionEnd = selectionStart + 2;
-        }
-      }, 0);
-    }
   };
 
   /**
@@ -405,16 +388,12 @@ ${code}
               </div>
             </div>
 
-            {/* Code Textarea */}
-            <div className="relative flex-1 p-2">
-              <textarea
-                ref={textareaRef}
+            {/* Code Editor with Syntax Highlighting & Line Numbers */}
+            <div className="relative flex-1 flex overflow-hidden">
+              <CodeEditor
                 value={code}
-                onChange={(e) => setCode(e.target.value)}
-                onKeyDown={handleKeyDown}
-                spellCheck="false"
+                onChange={setCode}
                 placeholder="Type or paste HTML here..."
-                className="h-full w-full resize-none border-0 bg-transparent p-2 font-mono text-xs sm:text-sm text-zinc-100 placeholder-zinc-600 focus:outline-hidden leading-relaxed"
               />
             </div>
           </div>

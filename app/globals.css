@@ -50,3 +50,29 @@ pre.shiki {
 pre.shiki code {
   font-family: inherit !important;
 }
+
+/* Playground Code Editor Syntax Tokens */
+.tok-comment { color: #8b949e; font-style: italic; }
+.tok-doctype { color: #ff7b72; font-weight: 600; }
+.tok-tag { color: #7ee787; font-weight: 600; }
+.tok-attr-name { color: #79c0ff; }
+.tok-attr-val { color: #a5d6ff; }
+.tok-entity { color: #d2a8ff; }
+.tok-punct { color: #8b949e; }
+.tok-text { color: #e6edf3; }
+.tok-css-prop { color: #79c0ff; }
+.tok-css-val { color: #a5d6ff; }
+.tok-css-sel { color: #d2a8ff; font-weight: 600; }
+.tok-js-kw { color: #ff7b72; font-weight: 600; }
+.tok-js-str { color: #a5d6ff; }
+.tok-js-num { color: #79c0ff; }
+
+.tab-size-2 {
+  tab-size: 2;
+  -moz-tab-size: 2;
+}
+
+.code-editor-textarea::selection {
+  background: rgba(249, 115, 22, 0.35);
+  color: transparent;
+}
