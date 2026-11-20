@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://html5reference.dev'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://completehtmlmastery.vercel.app'),
   title: {
     default: 'HTML5 Reference — Complete Educational Guide & Native Browser Preview',
     template: '%s | HTML5 Reference',
@@ -35,7 +35,7 @@ export const metadata = {
     title: 'HTML5 Reference — Complete Educational Guide & Native Browser Preview',
     description:
       'A simple, clean reference covering every HTML tag, its attributes, accessibility rules, and real browser output.',
-    url: 'https://html5reference.dev',
+    url: 'https://completehtmlmastery.vercel.app',
     siteName: 'HTML5 Reference',
     locale: 'en_US',
     type: 'website',

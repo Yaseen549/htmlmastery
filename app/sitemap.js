@@ -1,7 +1,7 @@
 import { topics } from '../data/topics';
 
 export default async function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://html5reference.dev';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://completehtmlmastery.vercel.app';
   const currentDate = new Date().toISOString();
 
   // Core static routes

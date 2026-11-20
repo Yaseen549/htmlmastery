@@ -2,6 +2,8 @@
 
 > **A simple, clean reference covering every HTML tag, its attributes, accessibility rules, and real browser output.**
 
+[![Live Website](https://img.shields.io/badge/Live%20Demo-completehtmlmastery.vercel.app-F97316?style=for-the-badge&logo=vercel)](https://completehtmlmastery.vercel.app)
+
 [![Next.js](https://img.shields.io/badge/Next.js-16.4-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.3-blue?style=flat&logo=react)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
